@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Weather app
+        </title>
+    </head>
+    <body>
+        <h1>Please Fill your District to get weather information</h1>
+        <form action="http://localhost:3000/weather" method="POST">
+            <p>Name</p>
+            <input type = "text" name="nm"><br><br>
+            <input type = "submit" value="Submit">
+        </form>
+        {{data}}
+    </body>
+</html>
