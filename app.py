@@ -8,8 +8,6 @@ import json
 app = Flask(__name__)
 
 
-var_list = {}
-
 @app.route("/", methods = ["POST", "GET"])
 def get_form_data():
     return render_template("index.html")
