@@ -2,11 +2,9 @@ from types import MethodDescriptorType
 from flask import Flask, request, render_template, redirect, url_for, session
 from flask.json import jsonify
 import requests
-from datetime import timedelta
 import json
 
 app = Flask(__name__)
-
 
 @app.route("/", methods = ["POST", "GET"])
 def get_form_data():
